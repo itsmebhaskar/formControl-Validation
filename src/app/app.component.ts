@@ -18,9 +18,9 @@ export class AppComponent  {
 //method to change the nameControl Value
 nameChange()
 {
-  alert(this.nameControl.value)
+  alert(`Value before button click---------> ${this.nameControl.value}`)
   this.nameControl.setValue('Jay');
-  alert(this.nameControl.value)
+  alert(`Value after button click----------> ${this.nameControl.value}`)
 }
 
 
