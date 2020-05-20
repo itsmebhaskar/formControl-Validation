@@ -1,7 +1,15 @@
 <h1>{{name}}</h1>
-<label>Name <input  [formControl]="nameControl"  placeholder="name"></label>
-<!-- <div *ngIf="nameControl.errors.required">Name is required</div>
-<div *ngIf="nameControl.errors.maxlength">Name must be than 6</div> -->
+<form [formGroup]="formgrp">
+<label>First Name <input  formControlName="firstName"  placeholder="First Name"></label>
+<br>
+<br>
+<label>Last Name <input  formControlName="lastName"  placeholder="Last Name"></label>
+<br>
+<br>
+<label>age <input type="number" formControlName="age"  placeholder="Age"></label>
+<!-- <div *ngIf="formgroupcontrols.age.errors?.required">age is required</div>
+<div *ngIf="formgroupcontrols.age.errors?.min">age must be atleast 20</div> -->
 <br>
 <br>
 <button (click)="nameChange()">Change Name</button>
+</form>
