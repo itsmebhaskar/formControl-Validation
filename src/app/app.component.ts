@@ -10,18 +10,18 @@ export class AppComponent  {
   name = 'FormGroup Demo'
 
 //creating instance of FormGroup with default values
-  formgrp:FormGroup=new FormGroup({
-  firstName:new FormControl(),
-  lastName:new FormControl(),
-  age:new FormControl()
-  });
+  // formgrp:FormGroup=new FormGroup({
+  // firstName:new FormControl('abc'),
+  // lastName:new FormControl('xyz'),
+  // age:new FormControl(25)
+  // });
 
   //Validation
-  // formgrp:FormGroup=new FormGroup({
-  // firstName:new FormControl('',[Validators.required]),
-  // lastName:new FormControl('',[Validators.required]),
-  // age:new FormControl(26,[Validators.required,Validators.min(20)])
-  // });
+  formgrp:FormGroup=new FormGroup({
+  firstName:new FormControl('',[Validators.required]),
+  lastName:new FormControl('',[Validators.required]),
+  age:new FormControl(26,[Validators.required,Validators.min(20)])
+  });
 
 
 get formgroupcontrols(){

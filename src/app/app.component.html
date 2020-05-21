@@ -7,8 +7,8 @@
 <br>
 <br>
 <label>age <input type="number" formControlName="age"  placeholder="Age"></label>
-<!-- <div *ngIf="formgroupcontrols.age.errors?.required">age is required</div>
-<div *ngIf="formgroupcontrols.age.errors?.min">age must be atleast 20</div> -->
+<div style="color:red" *ngIf="formgroupcontrols.age.errors?.required">age is required</div>
+<div style="color:red" *ngIf="formgroupcontrols.age.errors?.min">age must be atleast 20</div>
 <br>
 <br>
 <button (click)="nameChange()">Change Name</button>
